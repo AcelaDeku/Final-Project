@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const amiiboList = document.getElementById("amiibo-list");
 
-    // Fetch data from the JSON server
+    
     fetch("http://localhost:3000/amiibo")
         .then(response => response.json())
         .then(data => {
-            // Display fetched data on the webpage
+
             data.forEach(amiibo => {
                 const amiiboCard = createAmiiboCard(amiibo);
                 amiiboList.appendChild(amiiboCard);
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error fetching data:", error));
 
-    // Create an amiibo card element
+    
     function createAmiiboCard(amiibo) {
         const amiiboCard = document.createElement("div");
         amiiboCard.classList.add("amiibo-card");

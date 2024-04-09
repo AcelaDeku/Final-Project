@@ -25,10 +25,10 @@ header{
 }
 
 .amiibo-card img {
-    max-width: 100%; /* Ensure images never exceed their container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
 }
 
 .purchase {
