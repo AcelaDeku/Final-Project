@@ -4,9 +4,12 @@ body {
     font-family: Arial, sans-serif; 
 }
 
-header{
+header {
+    background-color: yellowgreen; /* Red background color */
+    padding: 20px;
     text-align: center;
-    color: bisque;
+    border-top: 5px solid yellowgreen; /* Red border at the top */
+    border-bottom: 5px solid yellowgreen; /* Red border at the bottom */
 }
 
 #amiibo-list {
