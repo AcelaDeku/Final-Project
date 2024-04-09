@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Add event listener for submitting comment
-        const submitCommentButton = amiiboCard.querySelector(".submit-comment");
+        const submitCommentButton = amiiboCard.querySelector(".submit-comment"); 
         submitCommentButton.addEventListener("click", function () {
             const comment = amiiboCard.querySelector(".comment").value;
             // Send comment to server or perform any desired action

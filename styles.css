@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white; 
+    font-family: Arial, sans-serif; 
+}
+
+header{
+    text-align: center;
+    color: bisque;
+}
+
+#amiibo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.amiibo-card {
+    width: 30%; 
+    margin-bottom: 20px;
+    background-color: black; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.amiibo-card img {
+    max-width: 100%; /* Ensure images never exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.purchase {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: green; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purchase:hover {
+    background-color: green; 
+}
+
+.comment,
+.submit-comment {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.submit-comment {
+    background-color: red; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-comment:hover {
+    background-color: red; 
+}
