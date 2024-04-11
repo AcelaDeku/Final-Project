@@ -16,7 +16,7 @@ One can purchase various mario products and submit feedback.
 
 ### Installation Process
 
-1. Clone this repository using
+1. Clone this repository using,
 
     ```bash
       git clone git@github.com:AcelaDeku/Final-Project.git
