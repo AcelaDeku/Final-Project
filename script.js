@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         submitCommentButton.addEventListener("click", function () {
             const comment = amiiboCard.querySelector(".comment").value;
             
-            console.log("Comment submitted for Amiibo ID:", amiibo.id, comment);
+            console.log("Comment submitted for Amiibo ID:", amiibo.id, ":", comment);
         });
 
         return amiiboCard;
