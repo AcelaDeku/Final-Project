@@ -41,7 +41,7 @@ Incase of any query, need for collaboration or issues with this code, feel free 
 
 ## License
 
-MIT License
+MIT License.
 
 Copyright &copy; 2023 Dennis Kiboi.
 
