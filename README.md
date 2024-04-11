@@ -1,12 +1,10 @@
-# Email-extractor
+## Phase 1 Project
 
-JavaScript Console Application That Extracts a Name From an Email, OCTOBER 06 2023
-
-By **Dennis Kiboi**
+By **Ace Mwangi Samuel**
 
 ## Description
 
-This is a simple JavaScript console application that allows a user to enter an email in the format <firstName.lastName@emailDomain.com> and extract the first and last name. For example "<john.doe@email.com>" will output "John Doe".
+One can purchase various mario products and submit feedback
 
 ## How to Use
 
@@ -20,7 +18,7 @@ This is a simple JavaScript console application that allows a user to enter an e
 1. Clone this repository using
 
     ```bash
-      git clone git@github.com:dennis-kiboi/email-extractor.git
+      git clone git@github.com:AcelaDeku/Final-Project.git
     ```
 
     or by downloading a ZIP file of the code.
@@ -29,27 +27,16 @@ This is a simple JavaScript console application that allows a user to enter an e
 
 3. Navigate to the project folder on your bash terminal.
 
-4. Install dependancies using
-
-    ```bash
-      npm install
-    ```
-
-5. Run the application using
-
-    ```bash
-      node index.js
-    ```
-
 ## Technologies Used
 
 * JS
-* Node Runtime Environment
+* HTML
+* CSS
 
 ## Support and Contact Details
 
 Incase of any query, need for collaboration or issues with this code, feel free to reach me at
-<dennis.kiboi@moringaschool.com>
+<mwascj69@gmail.com>
 
 ## License
 
