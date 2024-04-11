@@ -12,7 +12,7 @@ One can purchase various mario products and submit feedback.
 
 * A computer with a bash terminal and node installed.
 * Access to the internet.
-* Make sure json is watching your node
+* Make sure json is watching your node.
 
 ### Installation Process
 
