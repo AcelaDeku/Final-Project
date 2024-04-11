@@ -4,7 +4,7 @@ By **Ace Mwangi Samuel**
 
 ## Description
 
-One can purchase various mario products and submit feedback
+One can purchase various mario products and submit feedback.
 
 ## How to Use
 
