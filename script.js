@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function createAmiiboCard(amiibo) {
         const amiiboCard = document.createElement("div");
         amiiboCard.classList.add("amiibo-card");
-        const price = Math.floor(Math.random() * (1500 - 400 + 1)) + 400; // Generating random price between 400 and 1500
+        const price = Math.floor(Math.random() * (1500 - 400 + 1)) + 400; 
         amiiboCard.innerHTML = `
             <img src="${amiibo.image}" alt="${amiibo.name}">
             <p>${amiibo.name}</p>
@@ -23,32 +23,32 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="submit-comment" style="display:none;">Submit Comment</button>
         `;
 
-        // Add event listener for purchasing
+        
         const purchaseButton = amiiboCard.querySelector(".purchase");
         purchaseButton.addEventListener("click", function () {
             if (purchaseButton.textContent === "Purchase") {
                 purchaseButton.textContent = "In Cart";
-                // Show comment section
+                
                 const commentSection = amiiboCard.querySelector(".comment");
                 const submitButton = amiiboCard.querySelector(".submit-comment");
                 commentSection.style.display = "block";
                 submitButton.style.display = "block";
             } else {
                 purchaseButton.textContent = "Purchase";
-                // Hide comment section
+                
                 const commentSection = amiiboCard.querySelector(".comment");
                 const submitButton = amiiboCard.querySelector(".submit-comment");
-                commentSection.value = ""; // Clear comment textarea
+                commentSection.value = ""; 
                 commentSection.style.display = "none";
                 submitButton.style.display = "none";
             }
         });
 
-        // Add event listener for submitting comment
+        
         const submitCommentButton = amiiboCard.querySelector(".submit-comment");
         submitCommentButton.addEventListener("click", function () {
             const comment = amiiboCard.querySelector(".comment").value;
-            // Send comment to server or perform any desired action
+            
             console.log("Comment submitted for Amiibo ID:", amiibo.id, ":", comment);
         });
 
