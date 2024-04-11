@@ -1,4 +1,4 @@
-## Phase 1 Project
+# Phase 1 Project
 
 By **Ace Mwangi Samuel**
 
