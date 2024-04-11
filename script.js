@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const amiiboList = document.getElementById("amiibo-list");
 
-    
     fetch("http://localhost:3000/amiibo")
         .then(response => response.json())
         .then(data => {
-
             data.forEach(amiibo => {
                 const amiiboCard = createAmiiboCard(amiibo);
                 amiiboList.appendChild(amiiboCard);
@@ -13,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error fetching data:", error));
 
-    
     function createAmiiboCard(amiibo) {
         const amiiboCard = document.createElement("div");
         amiiboCard.classList.add("amiibo-card");
+        const price = Math.floor(Math.random() * (1500 - 400 + 1)) + 400; // Generating random price between 400 and 1500
         amiiboCard.innerHTML = `
             <img src="${amiibo.image}" alt="${amiibo.name}">
             <p>${amiibo.name}</p>
-            <button class="purchase" data-amiibo-id="${amiibo.id}">Purchase</button>
+            <button class="purchase" data-amiibo-id="${amiibo.id}">KSh ${price}</button> <!-- Displaying random price -->
             <textarea class="comment" placeholder="Leave a comment" style="display:none;"></textarea>
             <button class="submit-comment" style="display:none;">Submit Comment</button>
         `;
@@ -47,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Add event listener for submitting comment
-        const submitCommentButton = amiiboCard.querySelector(".submit-comment"); 
+        const submitCommentButton = amiiboCard.querySelector(".submit-comment");
         submitCommentButton.addEventListener("click", function () {
             const comment = amiiboCard.querySelector(".comment").value;
             // Send comment to server or perform any desired action
