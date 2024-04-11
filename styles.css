@@ -5,11 +5,8 @@ body {
 }
 
 header {
-    background-color: yellowgreen; /* Red background color */
-    padding: 20px;
-    text-align: center;
-    border-top: 5px solid yellowgreen; /* Red border at the top */
-    border-bottom: 5px solid yellowgreen; /* Red border at the bottom */
+   color: aquamarine;
+   text-align: center;
 }
 
 #amiibo-list {
